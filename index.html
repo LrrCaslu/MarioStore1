@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="favicon">
+
+    <!-- import the CSS file in HTML -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Icon font link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SuperMario Store</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <section id="header" class="header">
+        <a href="#" class="logo"><img src="./images/logo-m.png" alt="logo" width="40" height="40">Super Mario Store</a>
+
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#contact">Contato</a>
+            <a href="#category">Promoções</a>
+            <a href="#shop">Loja</a>
+
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+        </div>
+
+    </section>
+    <!-- final header-->
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <!-- 1-->
+        <div class="slide active"
+            style="background: url(./images/teste.jpg) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>Filme</span>
+                <h3>Compre seu ingresso!</h3>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </div>
+        <!-- 2-->
+        <div class="slide"
+            style="background: url(./images/teste1.jpg) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+            </div>
+        </div>
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+    </section>
+
+    <!--categoria-->
+    <section class="category" id="category">
+        <h1 class="heading">Nossas <span>Promoções</span></h1>
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="./images/aventuras1.jpg">
+                <h3>DVD - Aventuras Super Mario 3</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/show1.jpg">
+                <h3>DVD - Mario Show - Mario Spellbound</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/luz.jpg">
+                <h3>Luz Noturna de Ilusão Super Mario</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/sacola100.jpg">
+                <h3>Sacola Personalizada Super Mario</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/mochila100.jpg">
+                <h3>Kit Mochila Infantil Super Mario</h3>
+            </a>
+            <a href="#" class="box">
+                <img src="./images/chapeu.jpg">
+                <h3>Chapeu Exclusivo Super Mario E Luigi</h3>
+            </a>
+        </div>
+    </section>
+    <!-- final da categoria -->
+
+    <!-- seção promoção-->
+    <section class="pramotion" id="pramotion">
+        <div class="box-container">
+            <div class="collection-card" style="background-image:url(./images/colec1.jpg)">
+                <h1>Super Mario e Nintendo LookSee</h1>
+                <a href="https://www.amazon.com/-/pt/dp/B0779C9PZ4/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91" target="blank" class="btn">Colecionador<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="collection-card" style="background-image:url(./images/colec2.jpg)">
+                <h1>Boneco Colecionavel: Racoon Mario</h1>
+                <a href="https://www.amazon.com/-/pt/dp/B07KXVSX3G/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91" target="blank" class="btn">Colecionador<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="collection-card" style="background-image:url(./images/lego.jpg)">
+                <h1>LEGO 71377: Super Mario King Boo e The Haunted Yard</h1>
+                <a href="https://www.amazon.com/-/pt/dp/B08DP7DLZ1/ref=sr_1_9?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91" target="blank" class="btn">Colecionador<i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- final da seção promoção-->
+
+
+    <!-- seção loja-->
+    <section class="shop" id="shop">
+        <h1 class="heading">Nossa<span> Loja</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="img">
+                    <img src="./images/camisa.jpeg">
+                </div>
+                <div class="content">
+                    <h3>Camisa Unisex The Big Bro Super Mario</h3>
+                    <div class="price">R$121.76<span> $R135.99</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B07KRXYHYH/ref=sr_1_16?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3FYW0BADRSCGK" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/sacola100.jpg">
+                </div>
+                <div class="content">
+                    <h3>Sacola Personalizada Super Mario</h3>
+                    <div class="price">R$113.94<span> R$120.99</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B0BQHBK8ZY/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1APVZZR27JTGS" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/chapeu.jpg">
+                </div>
+                <div class="content">
+                    <h3>Chapeu Exclusivo Super Mario e Luigi</h3>
+                    <div class="price">R$110.31<span> R$119.12</span></div>
+                    <a href="https://www.amazon.com/Super-Mario-Unisex-Cosplay-XCOSER/dp/B01LB2SSJU/ref=sr_1_16?crid=BL3LVK9G2EMV" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/luz.jpg">
+                </div>
+                <div class="content">
+                    <h3>Luz Noturna de Ilusão Super Mario</h3>
+                    <div class="price">R$150.20<span> R$155.99</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B0BYYP8ZPM/ref=sr_1_38?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=25WBS5XBH5IQE" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/aventuras1.jpg">
+                </div>
+                <div class="content">
+                    <h3>As Aventuras de Super Mario</h3>
+                    <div class="price">R$303.93<span> R$313.99</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B000N2HDJ6/ref=sr_1_1?keywords=the+adventures+of+super+mario+bros+3+dvd&qid=1686141674" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/mochila100.jpg">
+                </div>
+                <div class="content">
+                    <h3>Mochila Infantil Super Mario Bros</h3>
+                    <div class="price">R$170.72<span> R$339.27</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B09B2KBWT2/ref=sr_1_23?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=61PWK71EEFJG" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/show1.jpg">
+                </div>
+                <div class="content">
+                    <h3>Mario Show: Mario Spellbound</h3>
+                    <div class="price">R$36.22<span> R$66.89</span></div>
+                    <a href="https://www.amazon.com/-/pt/dp/B0016PYMTS/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1HLHP3JQBPCSM" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="./images/cogumelo.jpg">
+                </div>
+                <div class="content">
+                    <h3>Cogumelo de Pelucia Super Mario</h3>
+                    <div class="price">R$181.29<span> R$495.12</span></div>
+                    <a href="https://amazon.com/-/pt/dp/B07D6Z17Z5/ref=sr_1_3?__mk_pt_BR=ÅMÅŽÕÑ" target="blank" class="btn">Comprar</a>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </section>
+    <!--final da seção loja-->
+
+    <!-- Serviços -->
+    <section class="section services">
+        <div class="container">
+            <ul class="service-list">
+
+                <li class="services-item">
+                    <div class="service-card">
+
+                        <div class="card-icon">
+                            <img src="./images/service-1.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+                        </div>
+
+                        <div>
+                            <h3 class="h4 card-title">Entrega Grátis</h3>
+                            <p class="card-text">Para compras a partir de <span>R$150</span></p>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="services-item">
+                    <div class="service-card">
+
+                        <div class="card-icon">
+                            <img src="./images/service-2.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+                        </div>
+
+                        <div>
+                            <h3 class="h4 card-title">Pagamento Rápido</h3>
+                            <p class="card-text">Pagamento 100% Seguro</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="services-item">
+                    <div class="service-card">
+
+                        <div class="card-icon">
+                            <img src="./images/service-3.png" alt="Service icon" width="53" height="28" loading="lazy">
+
+                        </div>
+
+                        <div>
+                            <h3 class="h4 card-title">Garantia 7 Dias</h3>
+                            <p class="card-text">Seu dinheiro de volta em 7 Dias</p>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+    <!--final serviços -->
+    </section>
+    <!--final section-->
+
+    <!--Footer -->
+    <section class="footer" id="contact">
+        <div class="logo">
+            <a href="#home">
+                <img src="./images/logo2.png" alt="logo" width="300" height="100">
+            </a>
+        </div>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Links Rápidos</h3>
+                <a href="#home" class="link"><i class="fas fa-angle-right"></i>Inicio</a>
+                <a href="#shop" class="link"><i class="fas fa-angle-right"></i>Loja</a>
+                <a href="#category" class="link"><i class="fas fa-angle-right"></i>Promoções</a>
+            </div>
+      
+         
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#" class="link"><i class="fas fa-phone"></i>47 9234-4321</a>
+                <a href="#" class="link"><i class="fas fa-phone"></i>47 3312-4321</a>
+                <a href="#" class="link"><i class="fas fa-envelope"></i>mario@encanador.com</a>
+                <a href="#" class="link"><i class="fas fa-map"></i>Yoshi Island - 12345-000</a>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-youtube"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Notícias</h3>
+                <p>Fique por dentro das novidades e promoções!</p>
+                <form action="">
+                    <input class="email" type="email" placeholder="Insira seu e-mail">
+                    <input class="btn" value="Inscrever" type="submit">
+                </form>
+            </div>
+            
+        </div>
+        <div class="credit">Copyright by <span>Lucas Rosa, Juliano Costa</span> || all rights reserved.</div>
+        
+
+    </section>
+
+
+
+
+    <!--link of javascript file-->
+    <script src="app.js"></script>
+</body>
+
+</html>
