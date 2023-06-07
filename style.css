@@ -234,12 +234,12 @@ span{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    padding-block: 45px 25px;
+    padding-block: 45px 45px;
 }
 
 /*shop*/
