@@ -1,3 +1,3 @@
 # MarioStore1
 
-https://lucasrrsc.github.io/MarioStore1/
+https://lrrcaslu.github.io/MarioStore1/
